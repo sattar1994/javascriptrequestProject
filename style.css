@@ -19,6 +19,13 @@
     text-align: center;
     margin: 3em 0;
 }
+.parent form input{
+    border: none;
+    outline: none;
+    padding: .6em;
+    font-size: 1.1rem;
+    border-bottom: solid green 2px;
+}
 .parent form button{
     cursor: pointer;
     display: block;
@@ -32,9 +39,69 @@
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.far{
-    color: red;
+.result{
+    width: 50%;
+    box-shadow: 0 0 6px 2px black;
+    border-radius: 4px;
+    margin: .8em auto;
+    padding: .4em;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
-.cool{
-    color: blue;
+
+.btnStorage{
+    background-color: rgb(226, 47, 7);
+    color: white;
+    padding: .2em .6em;
+    border-radius: 4px ;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: .5em;
+}
+.btnDelet{
+    background-color: red;
+    color: white;
+    padding: .1em .4em;
+    border-radius: 4px ;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: .5em;
+}
+.btnDelet:disabled{
+    cursor: not-allowed;
+}
+.btnBack{
+    background-color: rgb(255, 47, 0);
+    color: white;
+    padding: .1em .4em;
+    border-radius: 4px ;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 .5em;
+}
+.btnComplet{
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: .1em .4em;
+    border-radius: 4px ;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   margin-left: auto;
+
+}
+.complet{
+    text-decoration: line-through red 3px;
 }

@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C to F</title>
+    <title>پروژه TODO</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="parent">
-      <h1>پروژه تبدیل واحد دما </h1>
+    <div class="parent" id="parent">
+      <h1>پروژه لیست انجام کارها</h1>
       <form>
-        <label for="input">مقدار دما رو وارد نمایید:</label>
-        <input type="number" id="input">
-        <select id="select">
-          <option value="F">F</option>
-          <option value="C">C</option>
-        </select>
-        <button id="btnChange">تبدیل کن</button>
+        <label for="input">لطفا تسک جدید خود را اضافه کنید</label>
+        <input type="text" id="input">
+        <button  id="btnChange">اضافه کردن</button>
       </form>
-      <h2 id="result"></h2>
+      <button id="btnStorage" class="btnStorage">ذخیره اطلاعات در مرورگر</button>
+    </div>
+    <div id="show">
+
+    </div>
+    
+    <div id="result">
+     
     </div>
     
     <script src="script.js"></script>
